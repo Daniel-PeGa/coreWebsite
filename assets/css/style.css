@@ -28,7 +28,55 @@
     max-width: 35%;
 }
 
+.width25{
+    max-width: 25%;
+}
+
 .noList{
     text-decoration: none;
     list-style: none;
+}
+
+@media screen and ( max-width: 768px){
+    .aboutNPic {
+        display: flex;
+        flex-direction: row;
+        max-width: 100%;
+        align-items: center;
+    }
+    
+    .smList{
+        display: flex;
+    flex-direction: column;
+    width: auto;
+    align-items: center;
+    }
+    
+}    
+
+@media screen and ( max-width: 500px) {
+    .aboutNPic {
+        display: flex;
+        flex-direction: column;
+        max-width: 100%;
+        align-content: stretch;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+    .eachWork {
+        display: flex;
+        flex-direction: column;
+        max-width: 100%;
+        align-items: center;
+    }
+}
+
+@media screen and ( max-width: 375px) {
+    .eachWork {
+        display: flex;
+        flex-direction: column;
+        max-width: 100%;
+        align-items: center;
+    }
+    
 }
